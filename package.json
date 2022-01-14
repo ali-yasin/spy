@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "NodeJS port of Dendroid server",
   "main": "index.js",
-  "scripts": {
+  "engines": {
+    "node": "14.15.4"
+  }
+
+  ,"scripts": {
     "migrate": "./node_modules/.bin/sequelize db:migrate",
     "build": "./node_modules/.bin/gulp",
     "start": "node index.js",
@@ -23,6 +27,7 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/adonespitogo/dendroid-nodejs/issues"
+  
   },
   "homepage": "https://github.com/adonespitogo/dendroid-nodejs#readme",
   "dependencies": {
